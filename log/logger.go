@@ -2,11 +2,10 @@ package log
 
 import (
 	"log"
-	"os"
 )
 
 // Logger is an optional custom logger.
-var Logger StdLogger = log.New(os.Stderr, "", log.LstdFlags)
+var Logger StdLogger = log.Default()
 
 // StdLogger interface for Standard Logger.
 type StdLogger interface {
