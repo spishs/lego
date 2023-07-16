@@ -49,10 +49,10 @@ func Printf(format string, args ...interface{}) {
 
 // Warnf writes a log entry.
 func Warnf(format string, args ...interface{}) {
-	Printf("[WARN] "+format, args...)
+	Printf(format, args...)
 }
 
 // Infof writes a log entry.
 func Infof(format string, args ...interface{}) {
-	Printf("[INFO] "+format, args...)
+	Printf(format, args...)
 }
